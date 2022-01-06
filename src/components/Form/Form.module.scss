@@ -1,0 +1,23 @@
+@import '/src/index.scss';
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: var(--add-shadow);
+}
+
+.Form__item {
+  margin-bottom: 15px;
+}
+
+.Form__input {
+  margin-bottom: 35px;
+  width: 200px;
+  padding: 10px 15px;
+  font-family: 'Montserrat', sans-serif;
+}

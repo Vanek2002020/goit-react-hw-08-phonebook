@@ -1,0 +1,53 @@
+@import '/src/index.scss';
+
+.SignupView {
+  box-sizing: border-box;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+  background-image: url(../images/signup-welcome_phone.jpg);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/signup-welcome_tablet.jpg);
+  }
+  @media screen and( min-width: 1024px) {
+    background-image: url(../images/signup-welcome_desktop.jpg);
+  }
+}
+
+.SignupView__container {
+  padding: 50px 40px;
+}
+
+.SignupView__form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  min-width: 210px;
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  box-shadow: var(--light-shadow);
+
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 30%;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.SignupView__item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.SignupView__input {
+  @media screen and (min-width: 877px) {
+    margin-left: 15px;
+  }
+}

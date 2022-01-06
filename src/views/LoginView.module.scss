@@ -1,0 +1,37 @@
+@import '/src/index.scss';
+
+.LoginView {
+  box-sizing: border-box;
+  height: 100vh;
+  color: #fff;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 40px;
+  background-image: url(../images/login-welcome_phone.jpg);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/login-welcome_tablet.jpg);
+  }
+  @media screen and( min-width: 1024px) {
+    background-image: url(../images/login-welcome_desktop.jpg);
+  }
+}
+
+.LoginView__form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  min-width: 210px;
+  width: 30vw;
+  padding: 20px;
+  box-shadow: var(--light-shadow);
+  text-align: center;
+  align-items: center;
+  margin-top: 25%;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}

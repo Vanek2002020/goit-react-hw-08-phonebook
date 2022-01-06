@@ -1,0 +1,38 @@
+.ContactsItem {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(63, 63, 63);
+  padding: 5px;
+}
+
+.ContactsItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.ContactsItem__information {
+  margin-right: 25px;
+}
+
+.ContactsItem__button {
+  width: 70px;
+  margin-left: auto;
+}
+
+.ContactsItem__name {
+  margin-right: 5px;
+}
+
+.ContactsItem__number {
+}
+
+.ContactsItem__copy {
+  all: unset;
+  &:hover {
+    background-color: transparent;
+    color: #000;
+  }
+
+  margin-left: 5px;
+}

@@ -1,0 +1,20 @@
+.Section__heading {
+  letter-spacing: 0.5;
+}
+
+.Section {
+  padding: 50px;
+}
+
+.Phonebook {
+  composes: Section;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contacts {
+  composes: Section;
+
+  display: flex;
+  flex-direction: column;
+}

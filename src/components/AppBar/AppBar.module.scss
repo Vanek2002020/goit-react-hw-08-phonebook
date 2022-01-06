@@ -1,0 +1,38 @@
+.AppBar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+  background-color: #282c34;
+  color: white;
+  box-shadow: var(--basic-box-shadow);
+
+  @media screen and(min-width: 600px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+.AppBar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  @media screen and (max-width: 599px) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
+}

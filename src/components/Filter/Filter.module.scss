@@ -1,0 +1,17 @@
+.Filter {
+  display: flex;
+  align-items: center;
+}
+.Filter__input {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.Filter__clear {
+  all: unset;
+  &:hover {
+    background-color: transparent;
+    color: #5aace2;
+  }
+}

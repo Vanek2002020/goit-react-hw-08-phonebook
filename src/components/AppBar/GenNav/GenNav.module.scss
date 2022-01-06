@@ -1,0 +1,12 @@
+@import '/src/index.scss';
+
+.GenNav {
+  text-decoration: none;
+  transition: var(--timing-function);
+
+  @media screen and (min-width: 600px) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
